@@ -9,7 +9,7 @@ function nowServing(line) {
   if (num===0) {
     result="There is nobody waiting to be served!";
   } else if (num>0) {
-    var name=line.pop();
+    var name=line.shift();
     result = "Currently serving "+name+".";
   }
   return result;
