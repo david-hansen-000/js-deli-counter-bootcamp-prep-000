@@ -1,6 +1,6 @@
 function takeANumber(line, newName) {
   line.push(newName);
-  return "Welcome, "+newName+". You are number "+(line.length+1)+" in line.";
+  return "Welcome, "+newName+". You are number "+(line.length)+" in line.";
 }
 
 function nowServing(line) {
@@ -21,7 +21,7 @@ function currentLine(line) {
     result="The line is currently empty.";
   } else {
     for (var i=0; i<line.length; i++) {
-      result = result + " " + (i+1) +". "+line[i]+", ";
+      result = result + (i+1) +". "+line[i]+", ";
     }
     result = result.substring(0, result.length-1);
   }
