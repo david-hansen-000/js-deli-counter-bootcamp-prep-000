@@ -1,4 +1,4 @@
-function takeNumber(line, newName) {
+function takeANumber(line, newName) {
   line.push(newName);
   return "Welcome, "+newName+". You are number "+(line.length+1)+" in line.";
 }
@@ -23,7 +23,7 @@ function currentLine(line) {
     for (var i=0; i<line.length; i++) {
       result = result + " " + (i+1) +". "+line[i]+", ";
     }
-    result = result.substring(0, result.length-1);
+    result = "The line is currently: "+result.substring(0, result.length-1);
   }
   return result;
 }
