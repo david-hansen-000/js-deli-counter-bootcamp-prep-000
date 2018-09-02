@@ -18,7 +18,7 @@ function nowServing(line) {
 function currentLine(line) {
   var result;
   if (line <= 0) {
-    result="The line is currently empty."
+    result="The line is currently empty.";
   } else {
     for (var i=0; i<line.length; i++) {
       result = result + " " + (i+1) +". "+line[i]+", ";
